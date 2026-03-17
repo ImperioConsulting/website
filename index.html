@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Imperio | Salesforce Consulting</title>
+    <title>Group Imperio | Salesforce & Certinia Consulting</title>
     <link rel="stylesheet" href="styles.css">
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <script src="https://www.google.com/recaptcha/api.js"></script>
@@ -12,119 +12,227 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">Group <span>Imperio</span></a>
+            <a href="#" class="logo">
+                <img src="logo.svg" alt="Group Imperio" class="logo-img">
+            </a>
             <button class="nav-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav-links">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#why-us">Why Us</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="#contact" class="btn btn-nav">Get in Touch</a></li>
+                <li><a href="#services" data-en="Services" data-fr="Services">Services</a></li>
+                <li><a href="#about" data-en="About" data-fr="&Agrave; propos">About</a></li>
+                <li><a href="#why-us" data-en="Why Us" data-fr="Pourquoi nous">Why Us</a></li>
+                <li><a href="support.html" data-en="Support" data-fr="Soutien">Support</a></li>
+                <li><a href="#contact" class="btn btn-nav" data-en="Get in Touch" data-fr="Contactez-nous">Get in Touch</a></li>
+                <li class="lang-switch">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                </li>
             </ul>
         </div>
     </nav>
 
     <section class="hero">
-        <div class="container">
-            <h1>Transform Your Business with <span class="highlight">Salesforce</span></h1>
-            <p class="hero-subtitle">We help companies unlock the full potential of Salesforce through expert consulting, implementation, and managed services.</p>
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-badge" data-en="Salesforce & Certinia Partner" data-fr="Partenaire Salesforce &amp; Certinia">Salesforce & Certinia Partner</div>
+            <h1 data-en="Transform Your Business with <span class='highlight'>Salesforce</span> &amp; <span class='highlight'>Certinia</span>" data-fr="Transformez votre entreprise avec <span class='highlight'>Salesforce</span> &amp; <span class='highlight'>Certinia</span>">Transform Your Business with <span class="highlight">Salesforce</span> & <span class="highlight">Certinia</span></h1>
+            <p class="hero-subtitle" data-en="We help companies unlock the full potential of Salesforce and Certinia through expert consulting, implementation, and managed services." data-fr="Nous aidons les entreprises &agrave; exploiter le plein potentiel de Salesforce et Certinia gr&acirc;ce &agrave; des services-conseils, d'implantation et de gestion experts.">We help companies unlock the full potential of Salesforce and Certinia through expert consulting, implementation, and managed services.</p>
             <div class="hero-actions">
-                <a href="#contact" class="btn btn-primary">Start Your Project</a>
-                <a href="#services" class="btn btn-outline">Our Services</a>
+                <a href="#contact" class="btn btn-primary" data-en="Start Your Project" data-fr="D&eacute;marrer votre projet">Start Your Project</a>
+                <a href="#services" class="btn btn-outline" data-en="Our Services" data-fr="Nos services">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="trusted-by">
+        <div class="container">
+            <p class="trusted-label" data-en="Trusted Partners We Work With" data-fr="Partenaires de confiance avec lesquels nous travaillons">Trusted Partners We Work With</p>
+            <div class="platform-logos">
+                <div class="platform-logo">
+                    <img src="img/salesforce-with-type-logo.svg" alt="Salesforce">
+                </div>
+                <div class="platform-logo">
+                    <img src="img/certinia_logo.svg" alt="Certinia">
+                </div>
             </div>
         </div>
     </section>
 
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <p class="section-subtitle">End-to-end Salesforce solutions tailored to your business needs</p>
+            <div class="section-header">
+                <h2 class="section-title" data-en="Our Services" data-fr="Nos services">Our Services</h2>
+                <p class="section-subtitle" data-en="End-to-end Salesforce and Certinia solutions tailored to your business needs" data-fr="Solutions Salesforce et Certinia de bout en bout adapt&eacute;es &agrave; vos besoins d'affaires">End-to-end Salesforce and Certinia solutions tailored to your business needs</p>
+            </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card" data-aos>
                     <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
                         </svg>
                     </div>
-                    <h3>Implementation</h3>
-                    <p>Full-cycle Salesforce implementations across Sales Cloud, Service Cloud, Marketing Cloud, and more. We configure, customize, and deploy solutions that drive results from day one.</p>
+                    <h3 data-en="Salesforce Implementation" data-fr="Implantation Salesforce">Salesforce Implementation</h3>
+                    <p data-en="Full-cycle Salesforce implementations across Sales Cloud, Service Cloud, Marketing Cloud, and more. We configure, customize, and deploy solutions that drive results from day one." data-fr="Implantations Salesforce compl&egrave;tes incluant Sales Cloud, Service Cloud, Marketing Cloud et plus. Nous configurons, personnalisons et d&eacute;ployons des solutions qui g&eacute;n&egrave;rent des r&eacute;sultats d&egrave;s le premier jour.">Full-cycle Salesforce implementations across Sales Cloud, Service Cloud, Marketing Cloud, and more. We configure, customize, and deploy solutions that drive results from day one.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos>
                     <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 data-en="Certinia (FinancialForce)" data-fr="Certinia (FinancialForce)">Certinia (FinancialForce)</h3>
+                    <p data-en="Expert implementation and optimization of Certinia ERP, Professional Services Automation (PSA), Financial Management, and Customer Success — all natively built on Salesforce." data-fr="Implantation et optimisation expertes de Certinia ERP, automatisation des services professionnels (PSA), gestion financi&egrave;re et succ&egrave;s client — le tout nativement sur Salesforce.">Expert implementation and optimization of Certinia ERP, Professional Services Automation (PSA), Financial Management, and Customer Success — all natively built on Salesforce.</p>
+                </div>
+                <div class="service-card" data-aos>
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
                         </svg>
                     </div>
-                    <h3>Customization & Development</h3>
-                    <p>Custom Apex, Lightning Web Components, Flows, and integrations built to extend Salesforce beyond its out-of-the-box capabilities for your unique business processes.</p>
+                    <h3 data-en="Customization & Development" data-fr="Personnalisation et d&eacute;veloppement">Customization & Development</h3>
+                    <p data-en="Custom Apex, Lightning Web Components, Flows, and integrations built to extend Salesforce and Certinia beyond out-of-the-box capabilities for your unique business processes." data-fr="Apex personnalis&eacute;, composants Lightning Web, Flows et int&eacute;grations con&ccedil;us pour &eacute;tendre Salesforce et Certinia au-del&agrave; des fonctionnalit&eacute;s standard pour vos processus d'affaires uniques.">Custom Apex, Lightning Web Components, Flows, and integrations built to extend Salesforce and Certinia beyond out-of-the-box capabilities for your unique business processes.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos>
                     <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
                         </svg>
                     </div>
-                    <h3>Integration Services</h3>
-                    <p>Seamlessly connect Salesforce with your existing tech stack using MuleSoft, REST/SOAP APIs, and middleware to create a unified data ecosystem.</p>
+                    <h3 data-en="Integration Services" data-fr="Services d'int&eacute;gration">Integration Services</h3>
+                    <p data-en="Seamlessly connect Salesforce and Certinia with your existing tech stack using MuleSoft, REST/SOAP APIs, and middleware to create a unified data ecosystem." data-fr="Connectez Salesforce et Certinia &agrave; votre pile technologique existante en utilisant MuleSoft, API REST/SOAP et middleware pour cr&eacute;er un &eacute;cosyst&egrave;me de donn&eacute;es unifi&eacute;.">Seamlessly connect Salesforce and Certinia with your existing tech stack using MuleSoft, REST/SOAP APIs, and middleware to create a unified data ecosystem.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos>
                     <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/>
                         </svg>
                     </div>
-                    <h3>Managed Services</h3>
-                    <p>Ongoing administration, optimization, and support to keep your Salesforce org running at peak performance as your business evolves.</p>
+                    <h3 data-en="Managed Services" data-fr="Services g&eacute;r&eacute;s">Managed Services</h3>
+                    <p data-en="Ongoing administration, optimization, and support to keep your Salesforce and Certinia environments running at peak performance as your business evolves." data-fr="Administration, optimisation et soutien continus pour maintenir vos environnements Salesforce et Certinia &agrave; un rendement optimal &agrave; mesure que votre entreprise &eacute;volue.">Ongoing administration, optimization, and support to keep your Salesforce and Certinia environments running at peak performance as your business evolves.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos>
                     <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                         </svg>
                     </div>
-                    <h3>Training & Adoption</h3>
-                    <p>Empower your teams with hands-on training programs and change management strategies that maximize user adoption and ROI.</p>
+                    <h3 data-en="Training & Adoption" data-fr="Formation et adoption">Training & Adoption</h3>
+                    <p data-en="Empower your teams with hands-on training programs and change management strategies that maximize user adoption and ROI." data-fr="Donnez &agrave; vos &eacute;quipes les moyens de r&eacute;ussir gr&acirc;ce &agrave; des programmes de formation pratiques et des strat&eacute;gies de gestion du changement qui maximisent l'adoption et le retour sur investissement.">Empower your teams with hands-on training programs and change management strategies that maximize user adoption and ROI.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos>
                     <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
                         </svg>
                     </div>
-                    <h3>Data & Analytics</h3>
-                    <p>Data migration, cleansing, and reporting solutions with Salesforce Reports, Dashboards, and Tableau CRM to turn your data into actionable insights.</p>
+                    <h3 data-en="Data & Analytics" data-fr="Donn&eacute;es et analytique">Data & Analytics</h3>
+                    <p data-en="Data migration, cleansing, and reporting solutions with Salesforce Reports, Dashboards, and Tableau CRM to turn your data into actionable insights." data-fr="Solutions de migration, nettoyage et rapports de donn&eacute;es avec les rapports Salesforce, tableaux de bord et Tableau CRM pour transformer vos donn&eacute;es en informations exploitables.">Data migration, cleansing, and reporting solutions with Salesforce Reports, Dashboards, and Tableau CRM to turn your data into actionable insights.</p>
+                </div>
+                <div class="service-card" data-aos>
+                    <div class="service-icon service-icon-ai">
+                        <img src="img/agentforce_logo.png" alt="Agentforce" class="service-logo-img">
+                    </div>
+                    <h3 data-en="Agentforce" data-fr="Agentforce">Agentforce</h3>
+                    <p data-en="Deploy intelligent AI agents with Salesforce Agentforce to automate customer interactions, streamline workflows, and deliver personalized experiences at scale across every channel." data-fr="D&eacute;ployez des agents IA intelligents avec Salesforce Agentforce pour automatiser les interactions client, rationaliser les flux de travail et offrir des exp&eacute;riences personnalis&eacute;es &agrave; grande &eacute;chelle sur tous les canaux.">Deploy intelligent AI agents with Salesforce Agentforce to automate customer interactions, streamline workflows, and deliver personalized experiences at scale across every channel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="industries" class="industries">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Industries We Serve" data-fr="Industries que nous desservons">Industries We Serve</h2>
+                <p class="section-subtitle" data-en="Tailored Salesforce and Certinia solutions for your industry" data-fr="Des solutions Salesforce et Certinia adapt&eacute;es &agrave; votre industrie">Tailored Salesforce and Certinia solutions for your industry</p>
+            </div>
+            <div class="industries-grid">
+                <div class="industry-card" data-aos>
+                    <div class="industry-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 data-en="Professional Services" data-fr="Services professionnels">Professional Services</h3>
+                    <p data-en="Project management, resource planning, and billing automation for consulting and services firms." data-fr="Gestion de projets, planification des ressources et automatisation de la facturation pour les cabinets de conseil et de services.">Project management, resource planning, and billing automation for consulting and services firms.</p>
+                </div>
+                <div class="industry-card" data-aos>
+                    <div class="industry-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3 data-en="Technology / SaaS" data-fr="Technologie / SaaS">Technology / SaaS</h3>
+                    <p data-en="Scalable CRM and ERP solutions to support rapid growth, subscription management, and customer success." data-fr="Solutions CRM et ERP &eacute;volutives pour soutenir la croissance rapide, la gestion des abonnements et le succ&egrave;s client.">Scalable CRM and ERP solutions to support rapid growth, subscription management, and customer success.</p>
+                </div>
+                <div class="industry-card" data-aos>
+                    <div class="industry-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 20h20"/><path d="M5 20V8l7-5 7 5v12"/><rect x="9" y="12" width="6" height="8"/><line x1="9" y1="8" x2="15" y2="8"/>
+                        </svg>
+                    </div>
+                    <h3 data-en="Engineering" data-fr="Ing&eacute;nierie">Engineering</h3>
+                    <p data-en="Streamlined project tracking, resource allocation, and financial management for engineering and construction firms." data-fr="Suivi de projets, allocation des ressources et gestion financi&egrave;re simplifi&eacute;s pour les firmes d'ing&eacute;nierie et de construction.">Streamlined project tracking, resource allocation, and financial management for engineering and construction firms.</p>
+                </div>
+                <div class="industry-card" data-aos>
+                    <div class="industry-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3 data-en="Financial Services & Insurance" data-fr="Services financiers et assurance">Financial Services & Insurance</h3>
+                    <p data-en="Compliance-ready CRM, client lifecycle management, and financial reporting for banks, advisors, and insurers." data-fr="CRM conforme, gestion du cycle de vie client et rapports financiers pour les banques, conseillers et assureurs.">Compliance-ready CRM, client lifecycle management, and financial reporting for banks, advisors, and insurers.</p>
+                </div>
+                <div class="industry-card" data-aos>
+                    <div class="industry-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                    </div>
+                    <h3 data-en="Healthcare" data-fr="Sant&eacute;">Healthcare</h3>
+                    <p data-en="Patient relationship management, care coordination, and compliant data solutions for healthcare organizations." data-fr="Gestion des relations patients, coordination des soins et solutions de donn&eacute;es conformes pour les organisations de sant&eacute;.">Patient relationship management, care coordination, and compliant data solutions for healthcare organizations.</p>
+                </div>
+                <div class="industry-card" data-aos>
+                    <div class="industry-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>
+                        </svg>
+                    </div>
+                    <h3 data-en="Legal Services" data-fr="Services juridiques">Legal Services</h3>
+                    <p data-en="Matter management, client intake automation, and billing solutions tailored for law firms and legal departments." data-fr="Gestion des dossiers, automatisation de l'accueil des clients et solutions de facturation adapt&eacute;es aux cabinets d'avocats et d&eacute;partements juridiques.">Matter management, client intake automation, and billing solutions tailored for law firms and legal departments.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="about" class="about">
-        <div class="container about-grid">
-            <div class="about-content">
-                <h2 class="section-title">About Group Imperio</h2>
-                <p>Group Imperio is a Salesforce consulting firm dedicated to helping businesses streamline operations, strengthen customer relationships, and accelerate growth through the Salesforce platform.</p>
-                <p>Our team of certified Salesforce professionals brings deep industry expertise and a commitment to delivering measurable outcomes. From startups to enterprises, we partner with organizations at every stage of their Salesforce journey.</p>
-                <div class="stats">
-                    <div class="stat">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-content">
+                    <h2 class="section-title" data-en="About Group Imperio" data-fr="&Agrave; propos de Group Imperio">About Group Imperio</h2>
+                    <p data-en="Group Imperio is a Salesforce and Certinia consulting firm dedicated to helping businesses streamline operations, strengthen customer relationships, and accelerate growth." data-fr="Group Imperio est un cabinet de conseil Salesforce et Certinia d&eacute;di&eacute; &agrave; aider les entreprises &agrave; rationaliser leurs op&eacute;rations, renforcer les relations clients et acc&eacute;l&eacute;rer la croissance.">Group Imperio is a Salesforce and Certinia consulting firm dedicated to helping businesses streamline operations, strengthen customer relationships, and accelerate growth.</p>
+                    <p data-en="Our team of certified professionals brings deep industry expertise and a commitment to delivering measurable outcomes. From startups to enterprises, we partner with organizations at every stage of their journey." data-fr="Notre &eacute;quipe de professionnels certifi&eacute;s apporte une expertise approfondie et un engagement &agrave; fournir des r&eacute;sultats mesurables. Des startups aux grandes entreprises, nous accompagnons les organisations &agrave; chaque &eacute;tape de leur parcours.">Our team of certified professionals brings deep industry expertise and a commitment to delivering measurable outcomes. From startups to enterprises, we partner with organizations at every stage of their journey.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
                         <span class="stat-number">50+</span>
-                        <span class="stat-label">Projects Delivered</span>
+                        <span class="stat-label" data-en="Projects Delivered" data-fr="Projets livr&eacute;s">Projects Delivered</span>
                     </div>
-                    <div class="stat">
+                    <div class="stat-card">
                         <span class="stat-number">30+</span>
-                        <span class="stat-label">Happy Clients</span>
+                        <span class="stat-label" data-en="Happy Clients" data-fr="Clients satisfaits">Happy Clients</span>
                     </div>
-                    <div class="stat">
+                    <div class="stat-card">
                         <span class="stat-number">10+</span>
-                        <span class="stat-label">Certifications</span>
+                        <span class="stat-label" data-en="Certifications" data-fr="Certifications">Certifications</span>
                     </div>
                 </div>
             </div>
@@ -133,28 +241,30 @@
 
     <section id="why-us" class="why-us">
         <div class="container">
-            <h2 class="section-title">Why Group Imperio</h2>
-            <p class="section-subtitle">What sets us apart from the rest</p>
+            <div class="section-header">
+                <h2 class="section-title" data-en="Why Group Imperio" data-fr="Pourquoi Group Imperio">Why Group Imperio</h2>
+                <p class="section-subtitle" data-en="What sets us apart from the rest" data-fr="Ce qui nous distingue des autres">What sets us apart from the rest</p>
+            </div>
             <div class="features-grid">
-                <div class="feature">
-                    <div class="feature-number">01</div>
-                    <h3>Certified Expertise</h3>
-                    <p>Our consultants hold multiple Salesforce certifications and stay current with every platform release.</p>
+                <div class="feature" data-aos>
+
+                    <h3 data-en="Certified Expertise" data-fr="Expertise certifi&eacute;e">Certified Expertise</h3>
+                    <p data-en="Our consultants hold multiple Salesforce and Certinia certifications and stay current with every platform release." data-fr="Nos consultants d&eacute;tiennent plusieurs certifications Salesforce et Certinia et restent &agrave; jour avec chaque nouvelle version.">Our consultants hold multiple Salesforce and Certinia certifications and stay current with every platform release.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-number">02</div>
-                    <h3>Business-First Approach</h3>
-                    <p>We start with your business goals, not the technology. Every solution is designed to deliver real, measurable value.</p>
+                <div class="feature" data-aos>
+
+                    <h3 data-en="Business-First Approach" data-fr="Approche ax&eacute;e sur les affaires">Business-First Approach</h3>
+                    <p data-en="We start with your business goals, not the technology. Every solution is designed to deliver real, measurable value." data-fr="Nous commen&ccedil;ons par vos objectifs d'affaires, pas la technologie. Chaque solution est con&ccedil;ue pour offrir une valeur r&eacute;elle et mesurable.">We start with your business goals, not the technology. Every solution is designed to deliver real, measurable value.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-number">03</div>
-                    <h3>Agile Delivery</h3>
-                    <p>Iterative sprints with transparent communication ensure you see progress early and often.</p>
+                <div class="feature" data-aos>
+
+                    <h3 data-en="Agile Delivery" data-fr="Livraison agile">Agile Delivery</h3>
+                    <p data-en="Iterative sprints with transparent communication ensure you see progress early and often." data-fr="Des sprints it&eacute;ratifs avec une communication transparente vous permettent de voir les progr&egrave;s rapidement et souvent.">Iterative sprints with transparent communication ensure you see progress early and often.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-number">04</div>
-                    <h3>Long-Term Partnership</h3>
-                    <p>We don't just deliver and leave. We build lasting relationships with ongoing support and strategic guidance.</p>
+                <div class="feature" data-aos>
+
+                    <h3 data-en="Long-Term Partnership" data-fr="Partenariat &agrave; long terme">Long-Term Partnership</h3>
+                    <p data-en="We don't just deliver and leave. We build lasting relationships with ongoing support and strategic guidance." data-fr="Nous ne faisons pas que livrer et partir. Nous b&acirc;tissons des relations durables avec un soutien continu et des conseils strat&eacute;giques.">We don't just deliver and leave. We build lasting relationships with ongoing support and strategic guidance.</p>
                 </div>
             </div>
         </div>
@@ -162,54 +272,58 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Let's Work Together</h2>
-            <p class="section-subtitle">Tell us about your project and we'll get back to you within 24 hours</p>
+            <div class="section-header">
+                <h2 class="section-title" data-en="Let's Work Together" data-fr="Travaillons ensemble">Let's Work Together</h2>
+                <p class="section-subtitle" data-en="Tell us about your project and we'll get back to you within 24 hours" data-fr="Parlez-nous de votre projet et nous vous r&eacute;pondrons dans les 24 heures">Tell us about your project and we'll get back to you within 24 hours</p>
+            </div>
             <form class="contact-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Dau000009foeo" method="POST">
                 <input type="hidden" name="captcha_settings" value='{"keyname":"GroupImperio","fallback":"true","orgId":"00Dau000009foeo","ts":""}'>
                 <input type="hidden" name="oid" value="00Dau000009foeo">
                 <input type="hidden" name="retURL" value="https://www.groupimperio.com/thankyou">
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="first_name">First Name</label>
+                        <label for="first_name" data-en="First Name" data-fr="Pr&eacute;nom">First Name</label>
                         <input type="text" id="first_name" maxlength="40" name="first_name" required>
                     </div>
                     <div class="form-group">
-                        <label for="last_name">Last Name</label>
+                        <label for="last_name" data-en="Last Name" data-fr="Nom de famille">Last Name</label>
                         <input type="text" id="last_name" maxlength="80" name="last_name" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="email">Email Address</label>
+                        <label for="email" data-en="Email Address" data-fr="Adresse courriel">Email Address</label>
                         <input type="email" id="email" maxlength="80" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="company">Company</label>
+                        <label for="company" data-en="Company" data-fr="Entreprise">Company</label>
                         <input type="text" id="company" maxlength="40" name="company">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group full-width">
-                        <label for="00Nau000008blo9">Service Needed</label>
+                        <label for="00Nau000008blo9" data-en="Service Needed" data-fr="Service requis">Service Needed</label>
                         <select id="00Nau000008blo9" name="00Nau000008blo9" title="Service Needed">
-                            <option value="">Select a service</option>
+                            <option value="" data-en="Select a service" data-fr="S&eacute;lectionnez un service">Select a service</option>
                             <option value="Implementation">Implementation</option>
+                            <option value="Certinia">Certinia (FinancialForce)</option>
                             <option value="Customization &amp; Development">Customization &amp; Development</option>
                             <option value="Integration Services">Integration Services</option>
                             <option value="Managed Services">Managed Services</option>
                             <option value="Training &amp; Adoption">Training &amp; Adoption</option>
                             <option value="Data &amp; Analytics">Data &amp; Analytics</option>
+                            <option value="Agentforce">Agentforce</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="description">Project Details</label>
+                    <label for="description" data-en="Project Details" data-fr="D&eacute;tails du projet">Project Details</label>
                     <textarea id="description" name="description" rows="5" required></textarea>
                 </div>
                 <div class="form-group recaptcha-group">
                     <div class="g-recaptcha" data-sitekey="6Lec4owsAAAAAOgRxhhQzPLAhImwfrniWws-cDaA"></div>
                 </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <button type="submit" class="btn btn-primary btn-full" data-en="Send Message" data-fr="Envoyer le message">Send Message</button>
             </form>
         </div>
     </section>
@@ -217,23 +331,26 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-brand">
-                <a href="#" class="logo">Group <span>Imperio</span></a>
-                <p>Expert Salesforce consulting to power your business forward.</p>
+                <a href="#" class="logo">
+                    <img src="logo.svg" alt="Group Imperio" class="logo-img logo-img-footer">
+                </a>
+                <p data-en="Expert Salesforce and Certinia consulting to power your business forward." data-fr="Services-conseils experts Salesforce et Certinia pour propulser votre entreprise.">Expert Salesforce and Certinia consulting to power your business forward.</p>
             </div>
             <div class="footer-links">
-                <h4>Quick Links</h4>
+                <h4 data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4>
                 <ul>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#why-us">Why Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="support.html">Support</a></li>
+                    <li><a href="#services" data-en="Services" data-fr="Services">Services</a></li>
+                    <li><a href="#about" data-en="About" data-fr="&Agrave; propos">About</a></li>
+                    <li><a href="#why-us" data-en="Why Us" data-fr="Pourquoi nous">Why Us</a></li>
+                    <li><a href="#contact" data-en="Contact" data-fr="Contact">Contact</a></li>
+                    <li><a href="support.html" data-en="Support" data-fr="Soutien">Support</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
                 <h4>Contact</h4>
                 <ul>
-                    <li>info@groupimperio.com</li>
+                    <li><a href="mailto:info@groupimperio.com">info@groupimperio.com</a></li>
+                    <li><a href="mailto:support@groupimperio.com">support@groupimperio.com</a></li>
                 </ul>
             </div>
         </div>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <!-- Certinia icon mark: abstract geometric element -->
+  <g transform="translate(10, 12)">
+    <!-- Stylized "C" / arc element -->
+    <path d="M0 18C0 8.1 8.1 0 18 0c6.2 0 11.6 3.1 14.8 7.9l-5.2 3.6C25.2 8.2 21.8 6 18 6c-6.6 0-12 5.4-12 12s5.4 12 12 12c3.8 0 7.2-2.2 9.6-5.5l5.2 3.6C29.6 32.9 24.2 36 18 36 8.1 36 0 27.9 0 18z" fill="#1B365D"/>
+  </g>
+  <!-- "certinia" wordmark -->
+  <text x="52" y="39" font-family="'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="600" fill="#1B365D" letter-spacing="0.5">certinia</text>
+</svg>

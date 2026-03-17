@@ -7,23 +7,31 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Group <span>Imperio</span></a>
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="Group Imperio" class="logo-img">
+            </a>
             <ul class="nav-links">
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#why-us">Why Us</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="index.html#contact" class="btn btn-nav">Get in Touch</a></li>
+                <li><a href="index.html#services" data-en="Services" data-fr="Services">Services</a></li>
+                <li><a href="index.html#about" data-en="About" data-fr="&Agrave; propos">About</a></li>
+                <li><a href="index.html#why-us" data-en="Why Us" data-fr="Pourquoi nous">Why Us</a></li>
+                <li><a href="support.html" data-en="Support" data-fr="Soutien">Support</a></li>
+                <li><a href="index.html#contact" class="btn btn-nav" data-en="Get in Touch" data-fr="Contactez-nous">Get in Touch</a></li>
+                <li class="lang-switch">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                </li>
             </ul>
         </div>
     </nav>
 
     <section class="hero thankyou-hero">
+        <div class="hero-bg"></div>
         <div class="container thankyou-content">
             <div class="thankyou-icon">
                 <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -31,9 +39,9 @@
                     <polyline points="22 4 12 14.01 9 11.01"/>
                 </svg>
             </div>
-            <h1>Thank You!</h1>
-            <p class="hero-subtitle">Your message has been received. Our team will review your inquiry and get back to you within 24 hours.</p>
-            <a href="index.html" class="btn btn-primary">Back to Home</a>
+            <h1 data-en="Thank You!" data-fr="Merci!">Thank You!</h1>
+            <p class="hero-subtitle" data-en="Your message has been received. Our team will review your inquiry and get back to you within 24 hours." data-fr="Votre message a &eacute;t&eacute; re&ccedil;u. Notre &eacute;quipe examinera votre demande et vous r&eacute;pondra dans les 24 heures.">Your message has been received. Our team will review your inquiry and get back to you within 24 hours.</p>
+            <a href="index.html" class="btn btn-primary" data-en="Back to Home" data-fr="Retour &agrave; l'accueil">Back to Home</a>
         </div>
     </section>
 
@@ -42,5 +50,7 @@
             <p>&copy; 2026 Group Imperio. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
