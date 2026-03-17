@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" fill="none">
+  <defs>
+    <linearGradient id="flowBg" x1="0" y1="0" x2="600" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F0F4F8"/>
+    </linearGradient>
+    <linearGradient id="flowBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0057B8"/>
+      <stop offset="100%" stop-color="#00A1E0"/>
+    </linearGradient>
+    <filter id="flowShadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0B1120" flood-opacity="0.07"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#0057B8"/>
+    </marker>
+    <marker id="arrowCyan" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#00A1E0"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="300" fill="url(#flowBg)" rx="8"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.035" stroke="#0057B8" stroke-width="0.5">
+    <line x1="0" y1="50" x2="600" y2="50"/>
+    <line x1="0" y1="100" x2="600" y2="100"/>
+    <line x1="0" y1="150" x2="600" y2="150"/>
+    <line x1="0" y1="200" x2="600" y2="200"/>
+    <line x1="0" y1="250" x2="600" y2="250"/>
+    <line x1="100" y1="0" x2="100" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="300"/>
+    <line x1="300" y1="0" x2="300" y2="300"/>
+    <line x1="400" y1="0" x2="400" y2="300"/>
+    <line x1="500" y1="0" x2="500" y2="300"/>
+  </g>
+
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#0057B8" letter-spacing="0.5">Salesforce Flow: Structured Automation</text>
+
+  <!-- ROW 1: Trigger -->
+  <rect x="230" y="48" width="140" height="40" rx="20" fill="url(#flowBlue)" filter="url(#flowShadow)"/>
+  <text x="300" y="73" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="white">Trigger</text>
+  <!-- Small icon: lightning bolt -->
+  <g transform="translate(252,60)" fill="white" opacity="0.9">
+    <polygon points="8,0 2,9 6,9 4,16 12,7 8,7"/>
+  </g>
+
+  <!-- Arrow down from Trigger -->
+  <line x1="300" y1="88" x2="300" y2="106" stroke="#0057B8" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- ROW 2: Get Records -->
+  <rect x="225" y="112" width="150" height="38" rx="6" fill="white" stroke="#0057B8" stroke-width="2" filter="url(#flowShadow)"/>
+  <text x="300" y="136" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#0057B8">Get Records</text>
+  <!-- Small database icon -->
+  <g transform="translate(248,123)" fill="none" stroke="#00A1E0" stroke-width="1.2" opacity="0.7">
+    <ellipse cx="5" cy="2" rx="5" ry="2"/>
+    <path d="M0,2 v6 c0,1.1 2.2,2 5,2 s5,-0.9 5,-2 v-6"/>
+    <path d="M0,5 c0,1.1 2.2,2 5,2 s5,-0.9 5,-2"/>
+  </g>
+
+  <!-- Arrow down from Get Records -->
+  <line x1="300" y1="150" x2="300" y2="168" stroke="#0057B8" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- ROW 3: Decision diamond -->
+  <g filter="url(#flowShadow)">
+    <polygon points="300,174 360,204 300,234 240,204" fill="white" stroke="#0057B8" stroke-width="2"/>
+  </g>
+  <text x="300" y="201" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#0057B8">Decision</text>
+  <text x="300" y="214" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#6B7B8D">If/Else</text>
+
+  <!-- Left branch: Yes -->
+  <line x1="240" y1="204" x2="142" y2="204" stroke="#0057B8" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <text x="195" y="198" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#0057B8">Yes</text>
+
+  <!-- Right branch: No -->
+  <line x1="360" y1="204" x2="458" y2="204" stroke="#00A1E0" stroke-width="2" marker-end="url(#arrowCyan)"/>
+  <text x="405" y="198" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#00A1E0">No</text>
+
+  <!-- Left Action box: Update Record -->
+  <rect x="42" y="186" width="100" height="36" rx="6" fill="white" stroke="#0057B8" stroke-width="2" filter="url(#flowShadow)"/>
+  <text x="92" y="200" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#0057B8">Update</text>
+  <text x="92" y="213" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#0057B8">Record</text>
+
+  <!-- Right Action box: Send Email -->
+  <rect x="458" y="186" width="100" height="36" rx="6" fill="white" stroke="#00A1E0" stroke-width="2" filter="url(#flowShadow)"/>
+  <text x="508" y="200" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#00A1E0">Send</text>
+  <text x="508" y="213" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#00A1E0">Email</text>
+
+  <!-- Converge: Left down -->
+  <line x1="92" y1="222" x2="92" y2="252" stroke="#0057B8" stroke-width="1.5"/>
+  <line x1="92" y1="252" x2="262" y2="252" stroke="#0057B8" stroke-width="1.5"/>
+
+  <!-- Converge: Right down -->
+  <line x1="508" y1="222" x2="508" y2="252" stroke="#00A1E0" stroke-width="1.5"/>
+  <line x1="508" y1="252" x2="338" y2="252" stroke="#00A1E0" stroke-width="1.5"/>
+
+  <!-- Arrow into Output -->
+  <line x1="300" y1="252" x2="300" y2="260" stroke="#0057B8" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- Output node -->
+  <rect x="235" y="266" width="130" height="26" rx="13" fill="url(#flowBlue)" filter="url(#flowShadow)"/>
+  <text x="300" y="284" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="white">Output</text>
+
+  <!-- Decorative step labels on far left -->
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#B0BEC5" font-weight="600">
+    <text x="20" y="72">STEP 1</text>
+    <text x="20" y="136">STEP 2</text>
+    <text x="20" y="166">STEP 3</text>
+    <text x="20" y="280">STEP 4</text>
+  </g>
+
+  <!-- Dashed horizontal guide lines -->
+  <line x1="15" y1="100" x2="585" y2="100" stroke="#0057B8" stroke-width="0.5" opacity="0.06" stroke-dasharray="4 3"/>
+  <line x1="15" y1="170" x2="585" y2="170" stroke="#0057B8" stroke-width="0.5" opacity="0.06" stroke-dasharray="4 3"/>
+  <line x1="15" y1="240" x2="585" y2="240" stroke="#0057B8" stroke-width="0.5" opacity="0.06" stroke-dasharray="4 3"/>
+</svg>

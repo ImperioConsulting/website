@@ -81,3 +81,44 @@ langBtns.forEach(btn => {
 if (currentLang !== 'en') {
     setLanguage(currentLang);
 }
+
+// Animated number counter
+const statNumbers = document.querySelectorAll('.stat-number');
+
+function animateCount(el) {
+    const text = el.textContent.trim();
+    const match = text.match(/^(\d+)(.*)$/);
+    if (!match) return;
+
+    const target = parseInt(match[1]);
+    const suffix = match[2]; // e.g. "+"
+    const duration = 1500;
+    const start = performance.now();
+
+    function update(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        // Ease out cubic
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.round(eased * target);
+        el.textContent = current + suffix;
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        }
+    }
+
+    requestAnimationFrame(update);
+}
+
+if (statNumbers.length > 0) {
+    const statObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCount(entry.target);
+                statObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    statNumbers.forEach(el => statObserver.observe(el));
+}

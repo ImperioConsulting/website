@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Group Imperio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="Group Imperio" class="logo-img">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#services" data-en="Services" data-fr="Services">Services</a></li>
+                <li><a href="index.html#about" data-en="About" data-fr="&Agrave; propos">About</a></li>
+                <li><a href="blog.html" data-en="Blog" data-fr="Blogue">Blog</a></li>
+                <li><a href="support.html" data-en="Support" data-fr="Soutien">Support</a></li>
+                <li><a href="index.html#contact" class="btn btn-nav" data-en="Get in Touch" data-fr="Contactez-nous">Get in Touch</a></li>
+                <li class="lang-switch">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="blog-hero">
+        <div class="container">
+            <h1 data-en="Blog" data-fr="Blogue">Blog</h1>
+            <p class="hero-subtitle" data-en="Insights on Salesforce, Certinia, and digital transformation" data-fr="Perspectives sur Salesforce, Certinia et la transformation num&eacute;rique">Insights on Salesforce, Certinia, and digital transformation</p>
+        </div>
+    </section>
+
+    <section class="blog-list">
+        <div class="container">
+            <div class="blog-grid">
+                <a href="blog/agentforce-vs-flow.html" class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="img/blog-agentforce-vs-flow-hero.svg" alt="Agentforce vs Salesforce Flow">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span class="blog-tag">Salesforce</span>
+                            <span class="blog-tag">Agentforce</span>
+                            <span class="blog-date">March 17, 2026</span>
+                        </div>
+                        <h2>Agentforce vs. Salesforce Flow: When to Use Which (and Why It Matters)</h2>
+                        <p>Both tools have a place, and knowing when to use each one is quickly becoming a core skill for Salesforce professionals.</p>
+                        <span class="blog-read-more" data-en="Read more &rarr;" data-fr="Lire la suite &rarr;">Read more &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="logo.svg" alt="Group Imperio" class="logo-img logo-img-footer">
+                </a>
+                <p data-en="Expert Salesforce and Certinia consulting to power your business forward." data-fr="Services-conseils experts Salesforce et Certinia pour propulser votre entreprise.">Expert Salesforce and Certinia consulting to power your business forward.</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4>
+                <ul>
+                    <li><a href="index.html#services" data-en="Services" data-fr="Services">Services</a></li>
+                    <li><a href="index.html#about" data-en="About" data-fr="&Agrave; propos">About</a></li>
+                    <li><a href="blog.html" data-en="Blog" data-fr="Blogue">Blog</a></li>
+                    <li><a href="index.html#contact" data-en="Contact" data-fr="Contact">Contact</a></li>
+                    <li><a href="support.html" data-en="Support" data-fr="Soutien">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:info@groupimperio.com">info@groupimperio.com</a></li>
+                    <li><a href="mailto:support@groupimperio.com">support@groupimperio.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Group Imperio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f2834709-5a09-4df9-8c23-a9838bc8cb41";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+</body>
+</html>

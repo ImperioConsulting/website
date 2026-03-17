@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentforce vs. Salesforce Flow | Group Imperio Blog</title>
+    <meta name="description" content="Learn when to use Agentforce vs Salesforce Flow, with real-world Certinia PSA examples. A guide for Salesforce admins and consultants.">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../logo.svg" alt="Group Imperio" class="logo-img">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html#services" data-en="Services" data-fr="Services">Services</a></li>
+                <li><a href="../index.html#about" data-en="About" data-fr="&Agrave; propos">About</a></li>
+                <li><a href="../blog.html" data-en="Blog" data-fr="Blogue">Blog</a></li>
+                <li><a href="../support.html" data-en="Support" data-fr="Soutien">Support</a></li>
+                <li><a href="../index.html#contact" class="btn btn-nav" data-en="Get in Touch" data-fr="Contactez-nous">Get in Touch</a></li>
+                <li class="lang-switch">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="blog-post">
+        <div class="container">
+            <div class="blog-post-header">
+                <a href="../blog.html" class="blog-back">&larr; <span data-en="Back to Blog" data-fr="Retour au blogue">Back to Blog</span></a>
+                <div class="blog-post-meta">
+                    <span class="blog-tag">Salesforce</span>
+                    <span class="blog-tag">Agentforce</span>
+                    <span class="blog-tag">Certinia PSA</span>
+                    <span class="blog-date">March 17, 2026</span>
+                </div>
+                <h1>Agentforce vs. Salesforce Flow:<br>When to Use Which (and Why It Matters)</h1>
+                <p class="blog-post-author">Published by Raffi Garagabedian | Salesforce &amp; Certinia PSA Consulting</p>
+            </div>
+
+            <div class="blog-post-hero">
+                <img src="../img/blog-agentforce-vs-flow-hero.svg" alt="Agentforce vs Salesforce Flow — Rules vs Reasoning">
+            </div>
+
+            <div class="blog-post-body">
+                <p class="blog-intro">If you've been following the Salesforce ecosystem lately, you've no doubt heard a lot about <strong>Agentforce</strong> — Salesforce's AI-powered agent platform. And if you're like most admins or consultants, your first question is probably: <em>do I still need Flow, or does Agentforce replace it?</em></p>
+
+                <p>The short answer: <strong>both tools have a place</strong>, and knowing when to use each one is quickly becoming a core skill for Salesforce professionals. In this post, we'll break down the key differences, when each tool shines, and how they can work together — with real-world Certinia PSA examples throughout.</p>
+
+                <h2>A Quick Refresher: What Each Tool Does</h2>
+
+                <p><strong>Salesforce Flow</strong> has been the go-to automation tool for years. It's declarative, visual, and handles everything from record updates to approval processes to sending emails. If something happens on a record and you need a predictable response — Flow is your friend.</p>
+
+                <p><strong>Agentforce</strong> is different in nature. Instead of following a fixed script, an Agentforce agent reasons about a situation and decides what action to take based on context, instructions, and the tools available to it. Think of it less like a conveyor belt and more like a knowledgeable colleague who can figure things out.</p>
+
+                <h2>The Core Difference: Rules vs. Reasoning</h2>
+
+                <p>Here's the simplest way to think about it:</p>
+
+                <div class="blog-comparison">
+                    <div class="blog-compare-card blog-compare-flow">
+                        <h3>Flow</h3>
+                        <p class="blog-compare-quote">"When X happens, always do Y."</p>
+                    </div>
+                    <div class="blog-compare-card blog-compare-agent">
+                        <h3>Agentforce</h3>
+                        <p class="blog-compare-quote">"Here's a situation — what should happen here?"</p>
+                    </div>
+                </div>
+
+                <p><strong>Flow is deterministic.</strong> You define every branch, every condition, every outcome. It's reliable, auditable, and easy to maintain for well-defined processes.</p>
+
+                <p><strong>Agentforce is probabilistic and contextual.</strong> It uses a large language model to interpret situations, choose from a set of available actions, and respond in a way that makes sense given the circumstances. It handles ambiguity — something Flow was never designed for.</p>
+
+                <h2>Side-by-Side Comparison</h2>
+
+                <div class="blog-table-wrapper">
+                    <table class="blog-table">
+                        <thead>
+                            <tr>
+                                <th>Criteria</th>
+                                <th>Salesforce Flow</th>
+                                <th>Agentforce Agent</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Trigger</td>
+                                <td>Record change, schedule, platform event</td>
+                                <td>User intent, natural language input</td>
+                            </tr>
+                            <tr>
+                                <td>Logic style</td>
+                                <td>If/then rules, structured branches</td>
+                                <td>Reasoning, context-aware decisions</td>
+                            </tr>
+                            <tr>
+                                <td>Maintenance</td>
+                                <td>Admin-friendly, visual builder</td>
+                                <td>Prompt + action tuning, more iterative</td>
+                            </tr>
+                            <tr>
+                                <td>Best for</td>
+                                <td>Predictable, repeatable processes</td>
+                                <td>Judgment-based, variable workflows</td>
+                            </tr>
+                            <tr>
+                                <td>Setup complexity</td>
+                                <td>Low to medium</td>
+                                <td>Medium to high (initial config)</td>
+                            </tr>
+                            <tr>
+                                <td>Certinia use case</td>
+                                <td>Auto-update project status on milestone</td>
+                                <td>Answer questions about project health</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2>When Flow Is the Right Choice</h2>
+
+                <img src="../img/blog-flow-diagram.svg" alt="Salesforce Flow diagram — structured automation" class="blog-inline-img">
+
+                <p>Flow still wins in most structured, high-volume automation scenarios. Use it when:</p>
+
+                <ul>
+                    <li>The process is <strong>well-defined</strong> with clear triggers and outcomes</li>
+                    <li>You need <strong>guaranteed, auditable execution</strong> (approvals, compliance steps)</li>
+                    <li>The logic doesn't require interpreting language or context</li>
+                    <li>You're automating something that runs <strong>hundreds of times a day</strong></li>
+                </ul>
+
+                <div class="blog-callout">
+                    <strong>Certinia PSA example:</strong> Automatically updating a project's billing status when all milestones are marked complete. No ambiguity — just a clean trigger-action pair that Flow handles perfectly.
+                </div>
+
+                <h2>When Agentforce Is the Right Choice</h2>
+
+                <img src="../img/blog-agentforce-diagram.svg" alt="Agentforce AI reasoning diagram" class="blog-inline-img">
+
+                <p>Agentforce earns its place when the task involves judgment, natural language, or variability. Use it when:</p>
+
+                <ul>
+                    <li>Users need to <strong>ask questions</strong> and get intelligent, context-aware answers</li>
+                    <li>The process involves <strong>multiple variables</strong> that change depending on the situation</li>
+                    <li>You want to <strong>reduce back-and-forth</strong> by letting users interact naturally</li>
+                    <li>The task requires <strong>pulling together information</strong> from multiple sources</li>
+                </ul>
+
+                <div class="blog-callout blog-callout-purple">
+                    <strong>Certinia PSA example:</strong> A project manager asks, "Why is this project showing a low realization rate?" An Agentforce agent can pull together timecard data, billing records, and project milestones to give a meaningful answer — something no Flow could do on its own.
+                </div>
+
+                <h2>Using Both Together</h2>
+
+                <p>Here's what many teams are discovering: <strong>the best outcomes come from combining both tools.</strong> Agentforce handles the intake and reasoning layer, while Flow handles the execution.</p>
+
+                <div class="blog-callout">
+                    <strong>A practical example:</strong> An Agentforce agent receives a resource request from a project manager in natural language. It interprets the intent, validates the details, and then triggers a Flow to create the resource request record in Certinia PSA and notify the resource manager. The agent does the thinking; Flow does the doing.
+                </div>
+
+                <p>This pattern — <strong>AI reasoning on top of structured automation</strong> — is where the Salesforce platform is clearly heading, and it's worth getting familiar with now.</p>
+
+                <h2>Bottom Line</h2>
+
+                <p>Agentforce is <strong>not here to replace Flow</strong>. It's here to handle the layer of work that Flow was never equipped for: language, judgment, and adaptability.</p>
+
+                <p>If you're a Salesforce admin or consultant, the skill set that will matter most over the next few years isn't choosing between these tools — it's knowing <strong>how to deploy them together strategically</strong>.</p>
+
+                <div class="blog-cta">
+                    <p data-en="Have questions about implementing Agentforce in a Certinia PSA environment?" data-fr="Vous avez des questions sur l'implantation d'Agentforce dans un environnement Certinia PSA?">Have questions about implementing Agentforce in a Certinia PSA environment?</p>
+                    <a href="../index.html#contact" class="btn btn-primary" data-en="Reach Out — It's What We Do" data-fr="Contactez-nous — C'est notre sp&eacute;cialit&eacute;">Reach Out — It's What We Do</a>
+                </div>
+
+                <div class="blog-author-box">
+                    <h3 data-en="About the Author" data-fr="&Agrave; propos de l'auteur">About the Author</h3>
+                    <p>Certified Salesforce &amp; Certinia PSA consultant with over 20 years of ERP implementation experience across Quebec, Canada, and internationally. Specializing in PSA optimization, Agentforce, and Business Process Automation.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="../index.html" class="logo">
+                    <img src="../logo.svg" alt="Group Imperio" class="logo-img logo-img-footer">
+                </a>
+                <p data-en="Expert Salesforce and Certinia consulting to power your business forward." data-fr="Services-conseils experts Salesforce et Certinia pour propulser votre entreprise.">Expert Salesforce and Certinia consulting to power your business forward.</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-en="Quick Links" data-fr="Liens rapides">Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html#services" data-en="Services" data-fr="Services">Services</a></li>
+                    <li><a href="../index.html#about" data-en="About" data-fr="&Agrave; propos">About</a></li>
+                    <li><a href="../blog.html" data-en="Blog" data-fr="Blogue">Blog</a></li>
+                    <li><a href="../index.html#contact" data-en="Contact" data-fr="Contact">Contact</a></li>
+                    <li><a href="../support.html" data-en="Support" data-fr="Soutien">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:info@groupimperio.com">info@groupimperio.com</a></li>
+                    <li><a href="mailto:support@groupimperio.com">support@groupimperio.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Group Imperio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f2834709-5a09-4df9-8c23-a9838bc8cb41";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+</body>
+</html>
