@@ -420,6 +420,7 @@ a {
 /* ===== Services ===== */
 .services {
     padding: 100px 0;
+    background: var(--gray-100);
 }
 
 .services-grid {
@@ -469,7 +470,6 @@ a {
 /* ===== Industries ===== */
 .industries {
     padding: 100px 0;
-    background: var(--gray-100);
 }
 
 .industries-grid {
