@@ -14,10 +14,17 @@ if (navToggle) {
     });
 }
 
-// Navbar scroll effect
+// Top bar & navbar scroll effect
 const navbar = document.querySelector('.navbar');
+const topBar = document.querySelector('.top-bar');
 window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 10);
+    const scrolled = window.scrollY > 10;
+    navbar.classList.toggle('scrolled', scrolled);
+    if (topBar) {
+        const hidden = window.scrollY > 50;
+        topBar.classList.toggle('hidden', hidden);
+        navbar.style.top = hidden ? '0' : '36px';
+    }
 });
 
 // Scroll animations
@@ -43,7 +50,13 @@ document.querySelectorAll('[data-aos]').forEach(el => observer.observe(el));
 
 // Language toggle
 const langBtns = document.querySelectorAll('.lang-btn');
-let currentLang = localStorage.getItem('lang') || 'en';
+let currentLang = localStorage.getItem('lang');
+if (!currentLang) {
+    // Auto-detect French speakers by browser language
+    const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    currentLang = browserLang.startsWith('fr') ? 'fr' : 'en';
+    localStorage.setItem('lang', currentLang);
+}
 
 function setLanguage(lang) {
     currentLang = lang;
