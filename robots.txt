@@ -5,4 +5,4 @@ Allow: /
 Disallow: /thankyou.html
 Disallow: /case.html
 
-Sitemap: https://groupimperio.com/sitemap.xml
+Sitemap: https://www.groupimperio.com/sitemap.xml
