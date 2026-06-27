@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Form confirmation pages — no SEO value
+Disallow: /thankyou.html
+Disallow: /case.html
+
+Sitemap: https://groupimperio.com/sitemap.xml
